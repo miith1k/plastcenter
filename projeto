@@ -1,0 +1,15 @@
+print("Bem-vindo ao Programa de Classificação de Renda, PlastCenter e Prefeitura de Morrinhos!")
+
+while True:
+  try:
+    renda = float(input("Por favor, informe sua renda mensal: "))
+    break
+  except ValueError:
+    print("Entrada inválida. Por favor, digite um número.")
+
+if renda <= 1412:
+  print("Você foi classificado como pessoa de baixa renda e será direcionado para o grupo de atendimento correspondente.")
+else:
+  print("Sua renda não se enquadra no perfil de baixa renda. Você será direcionado para o grupo de pessoas com renda incompatível.")
+
+print("Obrigado por participar!")
